@@ -1,0 +1,16 @@
+<% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+
+<% if @taxonomies %>
+	<% @taxonomies.each do |taxonomy| %>
+		<% cache [I18n.locale, taxonomy, max_level, @taxon] do %>
+			<div class="col1">
+				<div class="h_nav">
+					<h4 class='taxonomy-root'><%= taxonomy.name %></h4>
+					<ul>
+						<%= custom_taxons_tree(taxonomy.root, @taxon, max_level) %>
+					</ul>
+				</div>
+			</div>
+		<% end %>
+	<% end %>
+<% end %>
