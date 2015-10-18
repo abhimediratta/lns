@@ -4,6 +4,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
+
+@import "../custom_variables";
+
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -20,6 +23,7 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+
 .banner {
 	background: url(/assets/home/banner.jpg) no-repeat center top;
 	background-size: cover;
@@ -34,7 +38,6 @@ body a{
 	float: left;
 }
 .menu {
-	float:right;
 	margin-top: 1.5em;
 }
 .h_nav ul li a {
@@ -75,9 +78,7 @@ body a{
 	text-decoration:none;
 	color: #f84545;
 }
-span.price{
-	color: #f84545;
-}
+
 span.item-cat{
 	color:#999;
 }
@@ -470,6 +471,7 @@ x:-o-prefocus, .lb-overlay img {
 }
 /*--footer--*/
 .footer{
+	background: $header-color;
 	padding:3em 0;
 }
 .cssmenu{
@@ -483,7 +485,7 @@ x:-o-prefocus, .lb-overlay img {
 	display: inline-block;
 }
 .cssmenu ul li a {
-	color: #1a1a1a;
+	color: $lns-light-color;
 	display: block;
 	margin: 10px 20px;
 	text-transform: uppercase;
@@ -982,41 +984,8 @@ ul.single_social li a i.g1 {
 ul.single_social li a i.linked {
 	background-position:-8px -52px;
 }
-.btn.btn-primary {
-	font-size: 1.1em;
-	font-weight: 300;
-	font-style: normal;
-	text-shadow: none;
-	text-transform: uppercase;
-	color: #FFF;
-	padding: 10px 30px;
-	position: relative;
-	letter-spacing: 0;
-	background: transparent;
-	border-radius: 0;
-	box-shadow: none;
-	border: none;
-	outline: none;
-	border-radius: 0;
-	z-index: 1;
-	overflow: hidden;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-.btn {
-	display: inline-block;
-	padding: 4px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
-	text-align: center;
-	vertical-align: middle;
-	cursor: pointer;
-	color: #333;
-	border: 1px solid #ccc;
-	border-bottom-color: #b3b3b3;
-}
+
+
 .btn-primary {
 	color: #fff;
 }

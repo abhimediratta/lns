@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".megamenu").megamenu();});
+$(document).ready(function(){$(".megamenu").megamenu(100);});

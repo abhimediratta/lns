@@ -1,0 +1,31 @@
+@import "bootstrap-sprockets";
+@import "custom_variables";
+@import "bootstrap";
+
+
+
+#spree-header {
+  background: $header-color;
+  margin-bottom: $line-height-computed;
+
+  #header {
+    padding: 10px 0 0 0;
+  }
+
+  #logo {
+    padding-top: 13px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+
+  #top-nav-bar {
+    padding-top: 22px;
+  }
+}
