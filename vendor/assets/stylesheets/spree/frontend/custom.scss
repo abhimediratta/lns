@@ -1,7 +1,36 @@
+@import "bootstrap-sprockets";
 @import "custom_variables";
+@import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 
 .btn {
   border: 0px;
   padding: 7px 20px;
+}
+
+#spree-header {
+  background: $header-color;
+  margin-bottom: $line-height-computed;
+  font-weight: bold;
+
+  #header {
+    padding: 10px 0 0 0;
+  }
+
+  #logo {
+    padding-top: 13px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+
+  #top-nav-bar {
+    padding-top: 22px;
+  }
 }
