@@ -8810,6 +8810,11 @@ button.close {
   padding-top: 22px;
 }
 
+/* line 38, /Users/abhimediratta/MilkyWay/LnsFashion/vendor/assets/stylesheets/spree/frontend/frontend_bootstrap.css.scss */
+#contact_us_contact_submit {
+  margin-top: 20px;
+}
+
 /* Sidebar - .list-group-item styles */
 /* line 2, /Users/abhimediratta/.rvm/gems/ruby-2.2.1@rails4.2/bundler/gems/spree_static_content-80a74e1ad8e1/app/assets/stylesheets/spree/frontend/spree_static_content.css */
 .pages-list.list-group > li:last-child {
