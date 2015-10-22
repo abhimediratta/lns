@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+
+  spree:
+    contact_us_title: "Contact"
