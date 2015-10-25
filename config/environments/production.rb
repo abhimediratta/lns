@@ -76,4 +76,15 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.active_support.deprecation = :notify
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'mail.homesafeindia.com',
+    port:                 587,
+    domain:               'homesafeindia.com',
+    user_name:            'finance@homesafeindia.com',
+    password:             'finance',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
 end
