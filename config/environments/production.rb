@@ -80,11 +80,11 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'mail.homesafeindia.com',
-    port:                 587,
-    domain:               'homesafeindia.com',
-    user_name:            'finance@homesafeindia.com',
-    password:             'finance',
-    authentication:       'plain',
-    enable_starttls_auto: true  }
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "gmail.com",
+    :user_name            => "abhimediratta@gmail.com",
+    :password             => "abhim2890",
+    :authentication       => :login,
+    :enable_starttls_auto => true  }
 end
